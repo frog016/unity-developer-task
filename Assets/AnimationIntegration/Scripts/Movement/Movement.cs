@@ -19,12 +19,13 @@ public class Movement : MonoBehaviour
 
     public void Move(Vector3 direction)
     {
+        Rotate(direction);
         _rigidbody.velocity = direction * _moveSpeed;
-        OnObjectMoved.Invoke(transform.position);
+        OnObjectMoved.Invoke(direction);
     }
 
     public void Rotate(Vector3 direction)
     {
-
+        _rigidbody.rotation = Quaternion.Lerp(_rigidbody.rotation, Quaternion.LookRotation(direction), _turnRate * Time.deltaTime);
     }
 }

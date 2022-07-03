@@ -20,6 +20,9 @@ public class CharacterController : MonoBehaviour
     private void TryMove()
     {
         var direction = _rotation * new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        if (direction.magnitude < 1e-4)
+            return;
+
         _movement.Move(direction);
     }
 }

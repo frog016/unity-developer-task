@@ -242,6 +242,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &539450015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539450013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02afffcabdc39141a0874b30e577dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bodyBone: {fileID: 1372666662}
+  _turnRate: 5
 --- !u!4 &539450016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f5abd89e727b3e0429f9c2bcfdf5f92e, type: 3}
@@ -338,7 +352,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 584555202}
-  - component: {fileID: 584555203}
   - component: {fileID: 584555206}
   - component: {fileID: 584555205}
   - component: {fileID: 584555204}
@@ -364,20 +377,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &584555203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584555201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f26c0ac693fccea4d8ec4b21a458bbad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetBone: {fileID: 1372666662}
-  rot: {x: 0, y: 0, z: 0}
 --- !u!114 &584555204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,7 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 8
-  _turnRate: 0
+  _turnRate: 5
 --- !u!54 &584555206
 Rigidbody:
   m_ObjectHideFlags: 0
