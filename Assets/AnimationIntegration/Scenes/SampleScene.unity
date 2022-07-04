@@ -406,7 +406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584555201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.35, y: 0, z: 0}
+  m_LocalPosition: {x: -3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 539450016}
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _finishingAngle: 90
-  _finishingDistance: 1
+  _finishingDistance: 3
   _tooltip: {fileID: 1838231196}
   _weapon: {fileID: 582656363}
   _sword: {fileID: 1218585027}
@@ -759,7 +759,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.22881036, y: 0.7674911, z: -0.46357822, w: -0.37907588}
-  m_LocalPosition: {x: 4.0364504, y: 10.756815, z: 3.120232}
+  m_LocalPosition: {x: 1.03645, y: 10.756815, z: 3.120232}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1802,6 +1802,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7208931587552575198, guid: fa482864908816e48b4004278c7b3cc3, type: 3}
+      propertyPath: m_Mass
+      value: 15.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208931587552575198, guid: fa482864908816e48b4004278c7b3cc3, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7208931589289032786, guid: fa482864908816e48b4004278c7b3cc3, type: 3}
       propertyPath: m_RootOrder
       value: 1

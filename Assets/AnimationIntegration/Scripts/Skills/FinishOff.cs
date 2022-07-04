@@ -68,12 +68,11 @@ public class FinishOff : MonoBehaviour
         yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length);
         ToggleWepaon(false);
         _weapon.SetActive(true);
-        var target = _target;
+        Destroy(_target, 5f);
         _animator.SetBool("Finishing", false);
         _controller.enabled = true;
         yield return new WaitForSeconds(5); 
         Instantiate(_enemyPrefab, new Vector3(Random.Range(-4f, 4f), 0, Random.Range(-4f, 4f)), Quaternion.identity);
-        Destroy(target);
     }
 
     private void ToggleWepaon(bool state)
